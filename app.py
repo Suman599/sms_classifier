@@ -3,9 +3,13 @@ import pickle
 import string
 from nltk.corpus import stopwords
 import nltk
+import nltk
+try:
+    nltk.data.find('tokenizers/punkt')
+except LookupError:
+    nltk.download('punkt')
 
-# Ensure punkt and stopwords are downloaded
-nltk.download('punkt')
+
 nltk.download('stopwords')
 
 from nltk.stem.porter import PorterStemmer
