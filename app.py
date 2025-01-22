@@ -3,10 +3,8 @@ import pickle
 import string
 from nltk.corpus import stopwords
 import nltk
-try:
-    nltk.data.find('tokenizers/punkt')
-except LookupError:
-    nltk.download('punkt')
+nltk.download('punkt', quiet=True)
+
 
 
 nltk.download('stopwords')
