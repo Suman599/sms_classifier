@@ -3,7 +3,6 @@ import pickle
 import string
 from nltk.corpus import stopwords
 import nltk
-import nltk
 try:
     nltk.data.find('tokenizers/punkt')
 except LookupError:
